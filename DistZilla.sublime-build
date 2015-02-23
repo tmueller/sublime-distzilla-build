@@ -1,0 +1,69 @@
+{
+    "selector": "source.perl",
+    "cmd": ["dzil", "build"],
+    "working_dir": "${project_path:${folder}}",
+    "shell": true,
+
+    "variants": [
+        {
+            "name": "DistZilla Commands (list the application's commands)",
+            "cmd": ["dzil", "commands"]
+        },
+        // {
+        //     "name": "DistZilla Help (display a command's help screen)",
+        //     "cmd": ["dzil", "help"]
+        // },
+        // {
+        //     "name": "DistZilla Add (add modules to an existing dist)",
+        //     "cmd": ["dzil", "add"]
+        // },
+        {
+            "name": "DistZilla Authordeps (list your distribution's author dependencies)",
+            "cmd": ["dzil", "authordeps"]
+        },
+        {
+            "name": "DistZilla Build (build your dist)",
+            "cmd": ["dzil", "build"]
+        },
+        {
+            "name": "DistZilla Clean (clean up after build, test, or install)",
+            "cmd": ["dzil", "clean"]
+        },
+        {
+            "name": "DistZilla Install (install your dist)",
+            "cmd": ["dzil", "install"]
+        },
+        {
+            "name": "DistZilla Listdeps (print your distribution's prerequisites)",
+            "cmd": ["dzil", "listdeps"]
+        },
+        // {
+        //     "name": "DistZilla New (mint a new dist)",
+        //     "cmd": ["dzil", "new"]
+        // },
+        {
+            "name": "DistZilla Nop (do nothing: initialize dzil, then exit)",
+            "cmd": ["dzil", "nop"]
+        },
+        {
+            "name": "DistZilla Release (release your dist)",
+            "cmd": ["dzil", "release"]
+        },
+        // {
+        //     "name": "DistZilla Run (run stuff in a dir where your dist is built)",
+        //     "cmd": ["dzil", "run", "$file"]
+        // },
+        // {
+        //     "name": "DistZilla Setup (set up a basic global config file)",
+        //     "cmd": ["dzil", "setup"]
+        // },
+        {
+            "name": "DistZilla Smoke (smoke your dist)",
+            "cmd": ["dzil", "smoke"]
+        },
+        {
+            "name": "DistZilla Test (test your dist)",
+            "cmd": ["dzil", "test"]
+        },
+    ]
+}
