@@ -64,6 +64,6 @@
         {
             "name": "DistZilla Test (test your dist)",
             "cmd": ["dzil", "test"]
-        },
+        }
     ]
 }
